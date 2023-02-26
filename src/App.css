@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+#root{
+  margin: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 3px 5px #ddd;
+}
+#root ul li{
+  list-style: none;
+}
+#root ul li input[type=checkbox]{
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #b5abab;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+#root ul li input[value=COMPLETED]{
+  background-color: gray;
+}
+#root ul li span::before {
+  border-radius: 999px;
+}
+#root h4{
+  margin: 18px 18px 0px;
+}
+#root ul li span{
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 16px;
+  margin-left: 15px;
+}
+#root ul li button{
+  background-color: #e55050;
+  color: white;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 3px 10px 3px 10px;
+  margin: 25px 3px 3px 20px;
+  cursor: pointer;
+}
+#root div input[type=text]{
+  width: 50%;
+  margin: 20px;
+}
+#root div button span{
+  color: #389dcd;
+  font-size: 25px;
+}
+#root div button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
